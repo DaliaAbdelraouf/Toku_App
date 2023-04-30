@@ -31,7 +31,7 @@ class PhrasesItem extends StatelessWidget {
                   const SizedBox(
                     width: 16,
                   ),
-                  // '${phrases.title}\n${phrases.subtitle}',
+
                   FittedBox(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
