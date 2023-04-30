@@ -10,7 +10,7 @@ class PhrasesItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(
-          10, 10, 10, 10), // set the desired margin here
+          10, 10, 10, 5), // set the desired margin here
       child: SizedBox(
         width: 200,
         child: ClipRRect(
@@ -39,15 +39,16 @@ class PhrasesItem extends StatelessWidget {
                         Text(
                           phrases.title,
                           style: const TextStyle(
-                            fontSize: 15,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
                           ),
-                          maxLines: 1,
+                          maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                         ),
                         const SizedBox(height: 8),
                         Text(
                           phrases.subtitle,
-                          style: const TextStyle(fontSize: 16),
+                          style: const TextStyle(fontSize: 17),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                         ),

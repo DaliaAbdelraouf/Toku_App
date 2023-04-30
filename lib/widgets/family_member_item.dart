@@ -10,7 +10,7 @@ class FamilyMemberItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(
-          5, 10, 5, 10), // set the desired margin here
+          5, 10, 5, 5), // set the desired margin here
       child: SizedBox(
         width: 200,
         child: ClipRRect(

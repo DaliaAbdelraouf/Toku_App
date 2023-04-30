@@ -10,7 +10,7 @@ class ColorsItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(
-          10, 10, 10, 10), // set the desired margin here
+          10, 10, 10, 5), // set the desired margin here
       child: SizedBox(
         width: 200,
         child: ClipRRect(

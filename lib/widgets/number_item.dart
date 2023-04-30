@@ -10,7 +10,7 @@ class NumbersItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(
-          10, 10, 10, 10), // set the desired margin here
+          10, 10, 10, 5), // set the desired margin here
       child: SizedBox(
         width: 200,
         child: ClipRRect(
@@ -20,19 +20,18 @@ class NumbersItem extends StatelessWidget {
               height: 100,
               child: Row(
                 children: [
-                    if (number.image != null)
-                  Container(
-
-                    height: 80,
-                    margin: const EdgeInsets.only(left: 10),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                  if (number.image != null)
+                    Container(
+                      height: 80,
+                      margin: const EdgeInsets.only(left: 10),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: Image(
+                        image: AssetImage(number.image!),
+                      ),
                     ),
-                    child: Image(
-                      image: AssetImage(number.image!),
-                    ),
-                  ),
                   const SizedBox(
                     width: 16,
                   ),
